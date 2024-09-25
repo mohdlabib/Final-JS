@@ -10,7 +10,6 @@ addOrder('Bob', [
   { name: 'Kopi', price: 10000 }
 ]);
 
-// Menampilkan orders dalam format JSON
 console.log(JSON.stringify(orders, null, 2));
 
 /**
@@ -42,7 +41,6 @@ console.log(JSON.stringify(orders, null, 2));
 updateOrderStatus(orders[0].id, 'Diproses');
 updateOrderStatus(orders[1].id, 'Selesai');
 
-// Menampilkan orders setelah memperbarui status dalam format JSON
 console.log(JSON.stringify(orders, null, 2));
 
 /**
@@ -79,7 +77,6 @@ console.log(calculateTotalRevenue());
 
 deleteOrder(orders[0].id);
 
-// Menampilkan orders setelah penghapusan dalam format JSON
 console.log(JSON.stringify(orders, null, 2));
 
 /**
