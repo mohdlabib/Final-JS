@@ -1,10 +1,15 @@
 function fibonacci(n) {
+    const fibArray = [0, 1];
+
     if (n === 0) {
-        return 0;
-    } else if (n === 1) {
-        return 1;
+        return [0];
     }
-    return fibonacci(n - 1) + fibonacci(n - 2);
+
+    for (let i = 2; i <= n; i++) {
+        fibArray.push(fibArray[i - 1] + fibArray[i - 2]);
+    }
+
+    return fibArray;
 }
 
 // Jangan hapus kode di bawah ini!
